@@ -42,7 +42,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 nvm install 10.16
 ```
 
-5. 설치가 끝나면 아래의 명령어로 Node.js 버전을 변경합니다.
+5. 설치가 끝나면 아래의 명령어로 Node.js 버전을 변경합니다.(이 폴더는 node에 맞춰진 package.json파일이라 다른버전 nodejs를 쓰면 에러가 나니 주의)
 
 ```bash
 nvm use 10.16
