@@ -22,6 +22,7 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 mongoose.connect(
   `mongodb+srv://${process.env.VUE_MONGDB_KEY}@cluster0.kse1g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+  //env사용하여 계정 , 패스워드 가림
   {
     useNewUrlParser: true,
   },
